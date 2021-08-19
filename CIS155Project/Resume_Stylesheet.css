@@ -1,0 +1,384 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: 'Courier New', Courier, monospace;
+}
+
+/* ======================================================== */
+            /*Basic Style / Formatting Section*/
+/* ======================================================== */
+html{
+    background-color: dimgray;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(90deg, blue, aqua, purple );
+    border-top: 3.6px dashed black;
+    border-bottom: 3.6px dashed black;
+    border-left: 13px double lawngreen;
+    border-right: 13px double lawngreen;
+    overflow-y: visible;
+    overflow-x: hidden;
+}
+header{
+    color: lime;
+    text-align: center;
+    padding-bottom: 13px;
+    border-bottom: 3.6px dashed black;
+}
+header > h1, h2, h3{
+    text-shadow: 3px 3px 9px black ;
+}
+div{
+
+}
+footer{
+    text-align: center;
+}
+
+/* ======================================================== */
+        /*Specified Non-ID Element Formatting Section*/
+/* ======================================================== */
+div > audio{
+    box-align: center;
+    float: right;
+    margin-right: 35%;
+}
+tbody{
+    
+}
+thead{
+    background-color: white;
+    font-size: 2em;
+    box-shadow: black 6px 6px 6px;
+}
+tr{
+    outline: 1.3px solid white;
+}
+td {
+    font-size: 1.3em;
+    font-weight: bold;
+}
+
+
+/* ======================================================== */
+            /*Specified / ID Formatting Section*/
+/* ======================================================== */
+nav#horizontal_nav{
+    font-size: 1.9em;
+    font-weight: bold;
+}
+nav#horizontal_nav > a{
+    text-decoration: none;
+    color: black;
+}
+nav#horizontal_nav > a:hover{
+    text-decoration: none;
+    color: lime;
+}
+nav#horizontal_nav > a:visited{
+    text-decoration: none;
+    color: white;
+}
+nav#horizontal_nav > a:visited:hover{
+    text-decoration: none;
+    color: lime;
+}
+
+
+
+
+/* ID Div Section */
+div#home_div > h2{
+    font-size: 1.9em;
+    text-align: center;
+    color: black;
+    border: 3px double white;
+    border-bottom: none;
+    margin-right: auto;
+}
+div#home_div > p{
+    font-size: 1em;
+    font-weight: bold;
+    border: 3px solid white;
+    border-top: none;
+}
+div#home_div > p:hover{
+    background-color: lime;
+    font-size: 1.6em;
+}
+div#home_div > img{
+    max-width: 50%;
+    min-width: 50%;
+    padding-left: 256px;
+}
+
+
+div#XP_div{
+
+}
+
+
+div#Bio_div > section > img{
+    max-width: 30%;
+    min-width: 30%;
+    height: 330px;
+    padding-left: 1%;
+    padding-right: 1%;
+    border: 3px ridge black;
+    box-shadow: black 13px 13px 13px;
+    background-color: transparent;
+}
+img#IMG_Portraite{
+    max-width: 40%;
+    min-width: 40%;
+    padding-left: 30%;
+    padding-right: 30%;
+    height: 540px;
+}
+.flex-container{
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+}
+div.flex-container p{
+    display: flex;
+}
+
+
+
+
+aside#right_list{
+    width: 30%;
+    float: right;
+    font-size: 1.3em;
+    padding-right: 13px;
+    text-align: right;
+}
+aside#left_side{
+    width: 60%;
+    font-size: 1.3em;
+    padding-left: 13px;
+    text-align: left;
+}
+section#past_Edu > img{
+    max-width: 60%;
+    padding-left: 13px;
+}
+section#present_Edu > img{
+    max-width: 60%;
+}
+section#future_Edu > img{
+    max-width: 60%;
+    padding-left: 13px;
+}
+
+div#XP_div > img{
+    display: none;
+}
+
+
+form#contact_form{
+    font-size: 36px;
+    text-align: center;
+}
+input{
+    margin-left: 5%;
+    width: 80%;
+    height: 33px;
+}
+input#comment{
+    height: 130px;
+}
+img#IMG_Card{
+    margin-left: 30%;
+}
+article#contact_info{
+
+}
+
+/* ======================================================== */
+    /*Mobile Device / Responsive Formatting Section*/
+/* ======================================================== */
+
+
+/*===========================Tablet=========================== */
+@media screen and (max-width: 770px) { 
+body{
+    width: 95%;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(90deg, blue, aqua, purple );
+    border-top: 3.6px dashed black;
+    border-bottom: 3.6px dashed black;
+    border-left: 13px double lawngreen;
+    border-right: 13px double lawngreen;
+}
+div > aside#right_list{
+    display: block;
+    float: left;
+    padding-right: 70px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+}
+div > aside#left_side{
+    display: block;
+    padding-left: 70px;
+    width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow-x: hidden;
+}
+div#XP_div{
+    padding-left: 27px;
+    border: none;
+}
+div#Bio_div > section > img{
+    max-width: 700px;
+    min-width: 700px;
+    display: inline-flex;
+    flex-flow: row-reverse;
+}
+div.flex-container > p{
+    font-size: 130%;
+    font-weight: bold;
+}
+div.flex-container img{
+    display: none;
+}
+form#contact_form{
+    font-size: 30px;
+    text-align: center;
+}
+input{
+    margin-left: 5%;
+    width: 70%;
+    height: 26px;
+}
+input#comment{
+    height: 130px;
+}
+
+/*=======================Phone============================== */
+@media screen and (max-width: 375px) {
+    body{
+        width: 95%;
+        margin-left: auto;
+        margin-right: auto;
+        background-image: linear-gradient(90deg, blue, aqua, purple );
+        border-top: 3.6px dashed black;
+        border-bottom: 3.6px dashed black;
+        border-left: 13px double lawngreen;
+        border-right: 13px double lawngreen;
+    }
+    div#home_div img{
+        padding-left: 18%;
+        max-width: 63%;
+        position: relative;
+    }
+    div > aside#right_list{
+        display: block;
+        float: left;
+        padding-right: 35px;
+        width: 375px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow-x: hidden;
+    }
+    div > aside#left_side{
+        display: block;
+        padding-left: 35px;
+        width: 375px;
+        margin-left: auto;
+        margin-right: auto;
+        overflow-x: hidden;
+    }
+    div#XP_div{
+        padding-left: 27px;
+        border: none;
+    }
+    div#Bio_div > section > img{
+        max-width: 300px;
+        min-width: 300px;
+        margin-left: 20px;
+        display: inline-flex;
+        flex-flow: row-reverse;
+    }
+    div.flex-container > p{
+        font-size: 115%;
+        font-weight: bold;
+        text-align: center;
+    }
+    div.flex-container img{
+        display: none;
+    }
+    form#contact_form{
+        font-size: 30px;
+        text-align: center;
+    }
+    input{
+        margin-left: 5%;
+        width: 70%;
+        height: 26px;
+    }
+    input#comment{
+        height: 130px; 
+    
+    }
+    
+    img#IMG_Card{
+        max-width: 300px;
+        padding-right: 6px;
+        margin-left: 6%;
+    }
+    div > audio{
+        box-align: center;
+        float: right;
+        margin-right: 10%;
+    }
+aside#right_list{
+    width: 20%;
+    float: right;
+    font-size: 1.3em;
+    padding-right: 9px;
+    text-align: center;
+}
+aside {
+    width: 25%;
+    font-size: 1.3em;
+    padding-right: 6px;
+    text-align: center;
+    overflow-wrap: normal;
+}
+section#past_Edu > img{
+    max-width: 60%;
+    padding-left: 13px;
+}
+section#present_Edu > img{
+    max-width: 60%;
+}
+section#future_Edu > img{
+    max-width: 60%;
+    padding-left: 10px;
+}
+div#edu_div ul{
+    padding-left: 10px;
+    font-size: 90%;
+    width: 80%;
+    text-align: center;
+}
+aside#left_side p{
+    width: 300px;
+}
+div#XP_div{
+    overflow:auto;
+}
+div#XP_div > img{
+    display: block;
+}
+}
